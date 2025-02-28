@@ -1,4 +1,5 @@
 import cv2
+import numpy as np
 image = cv2.imread('memahahaha.jpg')
 
 # Отображение изображения 
@@ -18,3 +19,11 @@ cv2.rectangle(image, (50, 50), (50 + 10, 60 + 10), (255, 0, 0), 5)
 cv2.imshow('Image1', image) 
 cv2.waitKey(0)
 """
+x = np.uint8([250])
+y = np.uint8([10])
+ 
+print( cv2.add(x,y) ) # 250+10 = 260 => 255
+[[255]]
+ 
+print( x+y )          # 250+10 = 260 % 256 = 4
+[4]
